@@ -10,6 +10,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { PasswordRecoveryComponent } from './pages/password-recovery/password-recovery.component';
+import { HistoricItemComponent } from './components/historic-item/historic-item.component';
+import { HistoricComponent } from './pages/historic/historic.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { PasswordRecoveryComponent } from './pages/password-recovery/password-re
     DashboardComponent,
     LoginComponent,
     RegisterComponent,
-    PasswordRecoveryComponent
+    PasswordRecoveryComponent,
+    HistoricItemComponent,
+    HistoricComponent
   ],
   imports: [
     BrowserModule,
