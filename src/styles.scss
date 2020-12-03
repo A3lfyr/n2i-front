@@ -29,11 +29,22 @@ h1 {
     font-family: 'Galada', cursive;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
 html, body {
     font-family: 'Montserrat Alternates', sans-serif;
     background-color: $black;
 }
 
+a {
+    color: $black;
+}
+a:hover {
+    color: $orange;
+}
 
 //Button
 .btn-primary {
