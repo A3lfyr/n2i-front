@@ -7,6 +7,9 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { InfoPlageComponent } from './components/info-plage/info-plage.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { PasswordRecoveryComponent } from './pages/password-recovery/password-recovery.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     FooterComponent,
     HeaderComponent,
     InfoPlageComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginComponent,
+    RegisterComponent,
+    PasswordRecoveryComponent
   ],
   imports: [
     BrowserModule,
