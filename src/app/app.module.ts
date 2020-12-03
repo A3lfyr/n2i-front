@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { NavComponent } from './components/nav/nav.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { InfoPlageComponent } from './components/info-plage/info-plage.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
@@ -14,9 +12,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent,
-    NavComponent,
-    SidebarComponent,
+    HeaderComponent
     InfoPlageComponent,
     DashboardComponent
   ],

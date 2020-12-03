@@ -1,1 +1,29 @@
 @import '../../../colors';
+
+header {
+  background-color: $black;
+  height: 6rem;
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+header h1 {
+  color: $white;
+  font-size: 1.8rem;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.logo {
+  height: 80%;
+}
