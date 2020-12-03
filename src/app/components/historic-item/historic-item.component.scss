@@ -1,0 +1,17 @@
+@import '../../../colors';
+
+.historic-item {
+  background-color: $orange;
+  border-radius: 0.3rem;
+  color: $white;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.historic-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
