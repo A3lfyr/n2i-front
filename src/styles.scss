@@ -31,4 +31,31 @@ h1 {
 
 html {
     font-family: 'Montserrat Alternates', sans-serif;
+    background-color: $black;
+}
+
+//Button
+.btn-primary {
+    color: #fff;
+    background-color: $orange;
+    border-color: $orange;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: $orange-black;
+    border-color: $orange-white;
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: $orange-black;
+    border-color: $orange-white;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $orange-white;
+    border-color: $orange-black;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus, .btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem $orange;
 }
