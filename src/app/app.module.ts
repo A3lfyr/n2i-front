@@ -7,6 +7,8 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { InfoPlageComponent } from './components/info-plage/info-plage.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { HistoricItemComponent } from './components/historic-item/historic-item.component';
+import { HistoricComponent } from './pages/historic/historic.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     FooterComponent,
     HeaderComponent,
     InfoPlageComponent,
-    DashboardComponent
+    DashboardComponent,
+    HistoricItemComponent,
+    HistoricComponent
   ],
   imports: [
     BrowserModule,
