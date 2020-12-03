@@ -1,0 +1,31 @@
+@import '../../../colors';
+
+#infoPlage {
+    background-color: $black;
+    border-radius: .6em;
+    color: $white;
+    padding: .6em;
+}
+
+.beachSearch {
+    background-color: $orange;
+    margin: -.6em;
+    border-radius: 0 0 .6em .6em;
+}
+
+input {
+    background-color: $orange;
+    color: $white;
+    border: none;
+    border-radius: 0 0 0 .6em;
+    padding-left: .6em;
+}
+
+svg {
+    margin-left: .6em;
+}
+
+.searchIcons {
+    float: right;
+    margin-right: .6em;
+}

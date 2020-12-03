@@ -2,5 +2,14 @@
 
 #dashboard {
     background-color: $white;
-    border-radius: 1em;
+    border-radius: .8em;
+    padding: .8em;
+}
+
+.container {
+    margin-top: .6em;
+}
+
+.btn {
+    font-weight: 600;    
 }
