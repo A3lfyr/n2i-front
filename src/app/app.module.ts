@@ -12,7 +12,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
     InfoPlageComponent,
     DashboardComponent
   ],
