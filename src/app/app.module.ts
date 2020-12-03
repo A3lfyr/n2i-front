@@ -8,6 +8,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { InfoPlageComponent } from './components/info-plage/info-plage.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HistoricItemComponent } from './components/historic-item/historic-item.component';
+import { HistoricComponent } from './pages/historic/historic.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HistoricItemComponent } from './components/historic-item/historic-item.
     HeaderComponent,
     InfoPlageComponent,
     DashboardComponent,
-    HistoricItemComponent
+    HistoricItemComponent,
+    HistoricComponent
   ],
   imports: [
     BrowserModule,
