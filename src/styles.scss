@@ -1,5 +1,30 @@
 @import 'colors';
 
+// Mobil
+@media (max-device-width:768px) {
+    html {
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+    }
+}
+
+// Mobil Landscape
+@media (orientation: landscape) {
+    html {
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+    }
+}
+
+// Mobil Profil
+@media (orientation: portrait) {
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+}
+
+// Global
 h1 {
     font-family: 'Galada', cursive;
 }
