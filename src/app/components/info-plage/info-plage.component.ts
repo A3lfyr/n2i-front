@@ -15,36 +15,42 @@ export class InfoPlageComponent implements OnInit {
   hauteurVagueMax: number = 5.3;
   direction: string = "OSO";
   vent: number = 22;
+  selectedLocation: any;
+  autoCompPlaces; any;
+  city: string;
+  country: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.getRemoteCityInformation();
   }
 
   searchAlert() {
-    Swal.mixin({
-      input: 'text',
-      confirmButtonText: 'Next &rarr;',
-      showCancelButton: true,
-      progressSteps: ['1', '2', '3']
-    }).queue([
-      {
-        title: 'Question 1',
-        text: 'Chaining swal2 modals is easy'
-      },
-      'Question 2',
-      'Question 3'
-    ]).then((result) => {
-      if (result.value) {
-        const answers = JSON.stringify(result.value)
-        Swal.fire({
-          title: 'All done!',
-          html: `
-            Your answers:
-            <pre><code>${answers}</code></pre>
-          `,
-          confirmButtonText: 'Lovely!'
-        })
-      }
-    })
+    Swal.fire({
+      html: 'Choisis ton lieu de glisse:</br><input placeholder="Waikiki" id="autoComp">',
+      showConfirmButton: false
+    });
+
+    this.autoCompPlaces = places({
+      appId: 'plTCXSX0DKW4',
+      apiKey: '913a88fb22a9fb4aa574362ebfd63d72',
+      container: document.querySelector('#autoComp'),
+      countries: ['fr', 'en']
+    });
+    this.autoCompPlaces.on('change', e => this.updateLocation(e));
+    this.autoCompPlaces.on('change', e => Swal.close());
   }
+
+  updateLocation(e) {
+    this.selectedLocation = e.suggestion;
+    this.country = this.selectedLocation.country;
+    this.city = this.selectedLocation.name;
+  }
+
+  getRemoteCityInformation() {
+    this.city = "Waikiki";
+    this.country = "France";
+  }
+
 }
