@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Member } from 'src/app/utils/classes';
 
 
 @Component({
@@ -9,23 +8,11 @@ import { Member } from 'src/app/utils/classes';
 })
 export class DashboardComponent implements OnInit {
   
-  member: Member;
-  public isLoggedIn: boolean = false;
+  public isLoggedIn: boolean = true;;
 
-  constructor(
-    //private mService: MemberService
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-    /*this.member = new Member;
-    this.isLoggedIn = false;*/
-    /*this.mService.getCurrentMember().subscribe(def => {
-      if(def.success === undefined)
-      {
-        this.member = def;
-        this.isLoggedIn = true;
-      }
-    });*/
   }
 
 }

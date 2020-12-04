@@ -21,6 +21,7 @@ import { SignalisationComponent } from './pages/signalisation/signalisation.comp
 import { SignalisationPollutionComponent } from './components/signalisation-pollution/signalisation-pollution.component';
 import { SignalisationEtoilesComponent } from './components/signalisation-etoiles/signalisation-etoiles.component';
 import { SignalisationRapportComponent } from './components/signalisation-rapport/signalisation-rapport.component';
+import { SlidebarComponent } from './components/slidebar/slidebar.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { SignalisationRapportComponent } from './components/signalisation-rappor
     SignalisationComponent,
     SignalisationPollutionComponent,
     SignalisationEtoilesComponent,
-    SignalisationRapportComponent
+    SignalisationRapportComponent,
+    SlidebarComponent,
   ],
   imports: [
     BrowserModule,
