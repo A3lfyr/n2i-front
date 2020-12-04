@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MemberService } from 'src/app/services/member.service';
-import { Member } from 'src/app/utils/classes';
 
 @Component({
   selector: 'app-header',
@@ -9,23 +8,14 @@ import { Member } from 'src/app/utils/classes';
 })
 export class HeaderComponent implements OnInit {
 
-  member: Member;
   public isLoggedIn: boolean = false;
 
   constructor(
-    //private mService: MemberService
+    private mService: MemberService
   ) { }
 
   ngOnInit() {
-    /*this.member = new Member;
-    this.isLoggedIn = false;*/
-    /*this.mService.getCurrentMember().subscribe(def => {
-      if(def.success === undefined)
-      {
-        this.member = def;
-        this.isLoggedIn = true;
-      }
-    });*/
+    this.isLoggedIn = this.mService.isLoggedIn()
   }
 
 }
