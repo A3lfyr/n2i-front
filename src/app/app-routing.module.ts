@@ -11,6 +11,8 @@ import { SignalisationComponent } from './pages/signalisation/signalisation.comp
 import { SignalisationPollutionComponent } from './components/signalisation-pollution/signalisation-pollution.component';
 import { SignalisationEtoilesComponent } from './components/signalisation-etoiles/signalisation-etoiles.component';
 import { SignalisationRapportComponent } from './components/signalisation-rapport/signalisation-rapport.component';
+import { SessionLaunchComponent } from './pages/session-launch/session-launch.component';
+import { SessionLaunchedComponent } from './pages/session-launch/session-launched/session-launched.component';
 
 
 const routes: Routes = [
@@ -25,6 +27,9 @@ const routes: Routes = [
   { path: 'signalisation-pollution', component: SignalisationPollutionComponent }, //temp
   { path: 'signalisation-etoiles', component: SignalisationEtoilesComponent }, //temp
   { path: 'signalisation-rapport', component: SignalisationRapportComponent }, //temp
+  { path: 'historic', component : HistoricComponent},
+  { path: 'session', component : SessionLaunchComponent},
+  { path: 'session/on', component : SessionLaunchedComponent}
 ];
 
 @NgModule({

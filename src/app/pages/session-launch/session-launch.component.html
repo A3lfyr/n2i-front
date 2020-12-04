@@ -1,0 +1,16 @@
+<h2>Démarrer une session de surf</h2>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of items">
+    <div class="row">
+      <div class="col-8">
+        {{item}}
+      </div>
+      <div class="col-4">
+        <input type="checkbox" data-on="oui" data-off="non" checked data-toggle="toggle" id="{{item}}">
+      </div>
+    </div>
+  </li>
+</ul>
+<div class="col-12">
+  <a type="button" class="btn btn-primary btn-block" [routerLink]="['/session/on']">Lancer une session</a>
+</div>
