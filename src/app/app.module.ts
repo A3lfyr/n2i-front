@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HistoricComponent } from './pages/historic/historic.component';
 import { MapComponent } from './components/map/map.component';
+import { SlidebarComponent } from './components/slidebar/slidebar.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MapComponent } from './components/map/map.component';
     ProfilComponent,
     StatsComponent,
     HistoricComponent,
-    MapComponent
+    MapComponent,
+    SlidebarComponent
   ],
   imports: [
     BrowserModule,
