@@ -2,14 +2,20 @@
 
 #infoPlage {
     background-color: $black;
+    /*background-image: linear-gradient(black, black), url("https://images.unsplash.com/photo-1559962219-f52ccd86944e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    background-blend-mode: saturation;
+    background-size: cover;*/
     border-radius: .6em;
+    backdrop-filter: brightness(0%);
     color: $white;
     padding: .6em;
 }
 
 .beachSearch {
     background-color: $orange;
-    margin: -.6em;
+    margin-left: -.6em;
+    margin-right: -.6em;
+    margin-bottom: -.6em;
     border-radius: 0 0 .6em .6em;
 }
 
@@ -27,6 +33,55 @@ svg {
     margin-right: .6em;
 }
 
+
 a {
      cursor: pointer; 
 }
+
+.MeasureUnit {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.MeasureUnit div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: .4rem;
+  border-radius: .5rem;
+  padding-left: .6rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  color: $blue;
+  height: 3rem;
+}
+
+.MeasureUnit div span {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.MeasureUnit div svg {
+  height: 90%;
+  width: auto;
+  color: $blue
+}
+
+#temperature {
+  flex-direction: row;
+  color: $orange;
+  height: 5rem;
+  justify-content: space-between;
+}
+
+#temperature span {
+  font-size: 3rem;
+}
+
+#temperature svg {
+  height: 90%;
+  width: auto;
+  color: $orange;
+}
+
