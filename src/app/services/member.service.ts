@@ -8,7 +8,7 @@ import { logginMember } from '../utils/classes';
 })
 export class MemberService {
 
-  private loginUrl = "https://api.upssi.net/login.php" // URL to web API
+  private loginUrl = "http://api.upssi.net/login.php" // URL to web API
   private user: any;
 
   /*getCurrentMember(): Observable<any> {/*
@@ -33,16 +33,9 @@ export class MemberService {
   //*/
 
   logginMember(lm: logginMember): boolean {
-    /*let res = this.http.post<any>(this.loginUrl, lm);
-    res.subscribe((def) => {
-      //this.user = def;
-      console.log("[DEBUG] response service : "+def);
-      return false;
-    });*/
     this.http.post<any>(this.loginUrl, {username: lm.username, password: lm.password, remember: lm.remember, action: "add"}).subscribe(data => {
-        console.log(data)
+        return (data.error = "Connected")
     })
-
     return false;
   }
 
