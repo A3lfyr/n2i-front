@@ -6,6 +6,7 @@ import { PasswordRecoveryComponent } from './pages/password-recovery/password-re
 import { ProfilComponent } from './pages/profil/profil.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { StatsComponent } from './pages/stats/stats.component';
+import { HistoricComponent } from './pages/historic/historic.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'password-recovery', component: PasswordRecoveryComponent },
   { path: 'profile', component: ProfilComponent },
   { path: 'stats', component: StatsComponent },
+  { path: 'historic', component : HistoricComponent},
 ];
 
 @NgModule({

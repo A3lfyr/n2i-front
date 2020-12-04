@@ -1,22 +1,32 @@
 <div id="infoPlage">
-<br>
-<br>
-<br>
-<br>
-<br>
-<p>Ceci est un contenu</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="beachSearch">
-    <form action="" methode="POST">
-        <input type="text" value="Waikiki Beach, Hawaii" />
+  <div class="MeasureUnit">
+    <div id="temperature">
+      <span>{{temperature | number:'.0-0'}}°C</span>
+      <i class="fas fa-sun"></i>
+    </div>
+    <div>
+      <i class="fas fa-tint"></i>
+      <span>{{temperatureC | number:'.1-1'}}°C</span>
+    </div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.03 59.81"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;}.cls-1{stroke-width:6px;}.cls-2{stroke-width:4px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M63,41.81c-3.74,7.5-7.5,15-15,15-15,0-15-30-30-30-7.51,0-11.25,7.5-15,15"/><line class="cls-2" x1="3" y1="8.67" x2="63.04" y2="8.67"/><line class="cls-2" x1="9.67" y1="2" x2="3" y2="8.67"/><line class="cls-2" x1="9.67" y1="15.34" x2="3" y2="8.67"/><line class="cls-2" x1="56.37" y1="15.34" x2="63.04" y2="8.67"/><line class="cls-2" x1="56.37" y1="2" x2="63.04" y2="8.67"/></g></g></svg>
+      <span>{{houleD | number:'.1-1'}}m {{houleT | number:'.0-0'}}s</span>
+    </div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.61 58.14"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;}.cls-1{stroke-linejoin:round;stroke-width:5.55px;}.cls-2{stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M82.83,55.14a27.15,27.15,0,0,1-5.72,0c-12-1.33-23.56-11.26-22.84-19.78a10.89,10.89,0,0,1,7.61-9.89c6.86-2.54,14.41-.26,15.23,0-4.76-4.79-10.5-10.13-18.58-10.13-27.88,0-27.88,40-55.75,40"/><line class="cls-2" x1="16.12" y1="35.35" x2="16.12" y2="2"/><line class="cls-2" x1="22.79" y1="8.67" x2="16.12" y2="2"/><line class="cls-2" x1="9.45" y1="8.67" x2="16.12" y2="2"/><line class="cls-2" x1="9.45" y1="28.68" x2="16.12" y2="35.35"/><line class="cls-2" x1="22.79" y1="28.68" x2="16.12" y2="35.35"/></g></g></svg>
+      <span>{{hauteurVagueMin | number:'.1-1'}}-{{hauteurVagueMax | number:'.1-1'}}m</span>
+    </div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120.4 99.47"><defs><style>.cls-1,.cls-3{fill:none;stroke-linecap:round;stroke-miterlimit:10;}.cls-1{stroke:#fff;stroke-width:18px;}.cls-2{mask:url(#mask);}.cls-3{stroke:#000;stroke-width:7px;}.cls-4{filter:url(#luminosity-invert-noclip);}</style><filter id="luminosity-invert-noclip" x="-5.5" y="41.2" width="125.9" height="58.28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0" result="invert"/><feFlood flood-color="#fff" result="bg"/><feBlend in="invert" in2="bg"/></filter><mask id="mask" x="-5.5" y="41.2" width="125.9" height="58.28" maskUnits="userSpaceOnUse"><g class="cls-4"><line class="cls-1" x1="3.5" y1="50.2" x2="43.52" y2="50.2"/><path class="cls-1" d="M26.84,66.87A16.68,16.68,0,1,0,43.52,50.2"/><rect x="56.87" y="63.54" width="26.68" height="20.01"/></g></mask></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><line class="cls-3" x1="3.5" y1="50.2" x2="94.02" y2="50.2"/><path class="cls-3" d="M71.14,73.08A22.88,22.88,0,1,0,94,50.2"/></g><line class="cls-3" x1="3.5" y1="36.85" x2="73.55" y2="36.85"/><path class="cls-3" d="M56.88,20.18A16.67,16.67,0,1,1,73.55,36.85"/><line class="cls-3" x1="3.5" y1="50.2" x2="43.52" y2="50.2"/><path class="cls-3" d="M26.84,66.87A16.68,16.68,0,1,0,43.52,50.2"/></g></g></svg>
+      <span>{{direction}} {{vent | number:'.0-0'}}km/h</span>
+    </div>
+  </div>
+
+  <div class="beachSearch">
+        <span>Waikiki Beach, Hawaii </span>
         <div class="searchIcons">
-            <i class="fas fa-map"></i>
-            <i type="submit" class="fas fa-search"></i>
+            <a ><i class="fas fa-map"></i></a>
+            <a (click)="searchAlert()" ><i class="fas fa-search"></i></a>
         </div>
-    </form>
-</div>
+  </div>
 </div>

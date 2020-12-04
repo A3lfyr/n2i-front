@@ -1,0 +1,14 @@
+@import "../../../_colors.scss";
+
+.tileList {
+  display: flex;
+  flex-direction: column;
+}
+
+.tileList app-historic-item {
+  margin-bottom: 0.8rem;
+}
+
+.tileList app-historic-item:last-child {
+  margin-bottom: 0;
+}

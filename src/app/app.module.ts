@@ -15,6 +15,8 @@ import { ProfilComponent } from './pages/profil/profil.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HistoricComponent } from './pages/historic/historic.component';
+import { MapComponent } from './components/map/map.component';
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     HistoricItemComponent,
     ProfilComponent,
     StatsComponent,
+    HistoricComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
