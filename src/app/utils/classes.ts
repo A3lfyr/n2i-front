@@ -7,3 +7,9 @@ export class Member {
     /** Email */
     email: string;
 }
+
+export class logginMember {
+    username: string;
+    password: string;
+    remember: number;
+}
