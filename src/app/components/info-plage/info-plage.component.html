@@ -23,12 +23,10 @@
   </div>
 
   <div class="beachSearch">
-      <form action="" methode="POST">
-          <input type="text" value="Waikiki Beach, Hawaii" />
-          <div class="searchIcons">
-              <i class="fas fa-map"></i>
-              <i type="submit" class="fas fa-search"></i>
-          </div>
-      </form>
+        <span>Waikiki Beach, Hawaii </span>
+        <div class="searchIcons">
+            <a ><i class="fas fa-map"></i></a>
+            <a (click)="searchAlert()" ><i class="fas fa-search"></i></a>
+        </div>
   </div>
 </div>

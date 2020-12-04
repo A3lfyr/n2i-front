@@ -19,11 +19,8 @@
     border-radius: 0 0 .6em .6em;
 }
 
-input {
-    background-color: $orange;
+span {
     color: $white;
-    border: none;
-    border-radius: 0 0 0 .6em;
     padding-left: .6em;
 }
 
@@ -34,6 +31,11 @@ svg {
 .searchIcons {
     float: right;
     margin-right: .6em;
+}
+
+
+a {
+     cursor: pointer; 
 }
 
 .MeasureUnit {
@@ -82,3 +84,4 @@ svg {
   width: auto;
   color: $orange;
 }
+
