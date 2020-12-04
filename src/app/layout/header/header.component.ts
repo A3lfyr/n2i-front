@@ -10,7 +10,7 @@ import { Member } from 'src/app/utils/classes';
 export class HeaderComponent implements OnInit {
 
   member: Member;
-  public isLoggedIn: boolean = false;
+  public isLoggedIn: boolean = true;
 
   constructor(
     //private mService: MemberService
