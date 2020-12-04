@@ -15,12 +15,18 @@ export class InfoPlageComponent implements OnInit {
   hauteurVagueMin: number;
   hauteurVagueMax: number;
   direction: string = "OSO";
-  vent: number;
+  vent: number = 22;
+  selectedLocation: any;
+  autoCompPlaces; any;
+  city: string;
+  country: string;
+
   constructor() { }
 
   ngOnInit() {
     this.loadingValue();
-    //TODO: chercher la plage la plus proche
+    this.getRemoteCityInformation();
+    // TODO: chercher la plage la plus proche
   }
 
   // Be replaced by request on API
@@ -43,6 +49,31 @@ export class InfoPlageComponent implements OnInit {
   }
 
   searchAlert() {
-    
+    Swal.fire({
+      html: 'Choisis ton lieu de glisse:</br><input placeholder="Waikiki" id="autoComp">',
+      showConfirmButton: false
+    });
+
+    this.autoCompPlaces = places({
+      appId: 'plTCXSX0DKW4',
+      apiKey: '913a88fb22a9fb4aa574362ebfd63d72',
+      container: document.querySelector('#autoComp'),
+      countries: ['fr']
+    });
+    this.autoCompPlaces.on('change', e => this.updateLocation(e));
+    this.autoCompPlaces.on('change', e => Swal.close());
   }
+
+  updateLocation(e) {
+    this.selectedLocation = e.suggestion;
+    this.country = this.selectedLocation.country;
+    this.city = this.selectedLocation.name;
+    this.loadingValue();
+  }
+
+  getRemoteCityInformation() {
+    this.city = "Waikiki";
+    this.country = "France";
+  }
+
 }
