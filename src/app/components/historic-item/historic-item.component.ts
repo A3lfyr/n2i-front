@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-historic-item',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./historic-item.component.scss']
 })
 export class HistoricItemComponent implements OnInit {
-    ridePlace = "Omaha Beach";
-    rideCountry = "France";
-    rideDate = new Date();
-    rideTime = new Date();
+    @Input() ridePlace: string;
+    @Input() rideCountry: string;
+    @Input() rideDate: Date;
+    @Input() rideTime: Date;
   constructor() {
 
   }
