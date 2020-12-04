@@ -17,13 +17,13 @@
       </label>
     </div>
   </div>
-  <button (click)="this.login()" class="btn btn-primary">Se connecter</button>
+  <button (click)="this.login()" class="btn btn-primary btn-block">Se connecter</button>
   <div class="container smallLink">
     <div class="row">
       <div class="col-6">
             <a [routerLink]="['/password-recovery']">Mot de passe oublié ?</a>
       </div>
-      <div class="col-6">
+      <div class="col-6 text-right">
             <a [routerLink]="['/register']">Créer un compte</a>
       </div>
     </div>

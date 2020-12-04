@@ -17,6 +17,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HistoricComponent } from './pages/historic/historic.component';
 import { MapComponent } from './components/map/map.component';
+import { SignalisationComponent } from './pages/signalisation/signalisation.component';
+import { SignalisationPollutionComponent } from './components/signalisation-pollution/signalisation-pollution.component';
+import { SignalisationEtoilesComponent } from './components/signalisation-etoiles/signalisation-etoiles.component';
+import { SignalisationRapportComponent } from './components/signalisation-rapport/signalisation-rapport.component';
 import { SessionLaunchComponent } from './pages/session-launch/session-launch.component';
 import { SessionLaunchedComponent } from './pages/session-launch/session-launched/session-launched.component';
 import { SessionStopComponent } from './pages/session-launch/session-stop/session-stop.component';
@@ -38,6 +42,11 @@ import { SlidebarComponent } from './components/slidebar/slidebar.component';
     StatsComponent,
     HistoricComponent,
     MapComponent,
+    SignalisationComponent,
+    SignalisationPollutionComponent,
+    SignalisationEtoilesComponent,
+    SignalisationRapportComponent,
+    SlidebarComponent,
     SessionLaunchComponent,
     SessionLaunchedComponent,
     SessionStopComponent,
