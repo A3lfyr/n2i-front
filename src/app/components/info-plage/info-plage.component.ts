@@ -26,7 +26,7 @@ export class InfoPlageComponent implements OnInit {
   ngOnInit() {
     this.loadingValue();
     this.getRemoteCityInformation();
-    //TODO: chercher la plage la plus proche
+    // TODO: chercher la plage la plus proche
   }
 
   // Be replaced by request on API
@@ -68,6 +68,7 @@ export class InfoPlageComponent implements OnInit {
     this.selectedLocation = e.suggestion;
     this.country = this.selectedLocation.country;
     this.city = this.selectedLocation.name;
+    this.loadingValue();
   }
 
   getRemoteCityInformation() {

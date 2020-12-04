@@ -24,10 +24,27 @@ export class MapComponent implements OnInit {
       zoomOffset: -1,
       accessToken: 'pk.eyJ1IjoiYXhsbWs1IiwiYSI6ImNraTkzanE2NTBid3EycXJvaXhiN3JlOWIifQ.kMqVp2jpRGsThlwQKQ7Ppg'
     }).addTo(this.myMap);
+    this.loadMarkers();
+    this.setMarkersUp();
   }
 
   addMarker(lon: number, lat: number) {
     this.markers.push(L.marker([lon, lat]).addTo(this.myMap));
+    this.markers.pop().on('click', e => console.log('To change'));
+  }
+
+  setMarkersUp() {
+    for (const e of this.markers) {
+      this.addMarker(e[0], e[1]);
+    }
+  }
+
+  loadMarkers() {
+    this.markers = [
+      [51, 0],
+      [51.5, 0.5],
+      [50.5, -0.5]
+    ];
   }
 
 }
