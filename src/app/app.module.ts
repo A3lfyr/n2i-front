@@ -20,6 +20,7 @@ import { MapComponent } from './components/map/map.component';
 import { SessionLaunchComponent } from './pages/session-launch/session-launch.component';
 import { SessionLaunchedComponent } from './pages/session-launch/session-launched/session-launched.component';
 import { SessionStopComponent } from './pages/session-launch/session-stop/session-stop.component';
+import { SlidebarComponent } from './components/slidebar/slidebar.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { SessionStopComponent } from './pages/session-launch/session-stop/sessio
     MapComponent,
     SessionLaunchComponent,
     SessionLaunchedComponent,
-    SessionStopComponent
+    SessionStopComponent,
+    SlidebarComponent
   ],
   imports: [
     BrowserModule,
