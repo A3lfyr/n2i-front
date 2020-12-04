@@ -35,7 +35,7 @@ svg {
 
 
 a {
-     cursor: pointer; 
+     cursor: pointer;
 }
 
 .MeasureUnit {
@@ -60,12 +60,23 @@ a {
 .MeasureUnit div span {
   margin-left: 1rem;
   font-size: 1.4rem;
+  color: $blue;
+}
+
+.MeasureUnit div span {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: $blue;
 }
 
 .MeasureUnit div svg {
   height: 90%;
   width: auto;
   color: $blue
+}
+
+.MeasureUnit div img {
+  height: 100%;
 }
 
 #temperature {
@@ -77,6 +88,7 @@ a {
 
 #temperature span {
   font-size: 3rem;
+  color: $orange;
 }
 
 #temperature svg {
@@ -85,3 +97,6 @@ a {
   color: $orange;
 }
 
+#wind {
+  color: $white;
+}
