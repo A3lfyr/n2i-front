@@ -11,6 +11,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { PasswordRecoveryComponent } from './pages/password-recovery/password-recovery.component';
 import { HistoricItemComponent } from './components/historic-item/historic-item.component';
+import { ProfilComponent } from './pages/profil/profil.component';
+import { StatsComponent } from './pages/stats/stats.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { HistoricComponent } from './pages/historic/historic.component';
 import { MapComponent } from './components/map/map.component';
 
@@ -26,12 +30,16 @@ import { MapComponent } from './components/map/map.component';
     RegisterComponent,
     PasswordRecoveryComponent,
     HistoricItemComponent,
+    ProfilComponent,
+    StatsComponent,
     HistoricComponent,
-    MapComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
