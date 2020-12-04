@@ -20,6 +20,7 @@ export class InfoPlageComponent implements OnInit {
 
   ngOnInit() {
     this.loadingValue();
+    //TODO: chercher la plage la plus proche
   }
 
   // Be replaced by request on API
