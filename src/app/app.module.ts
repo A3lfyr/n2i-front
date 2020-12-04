@@ -17,6 +17,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HistoricComponent } from './pages/historic/historic.component';
 import { MapComponent } from './components/map/map.component';
+import { SignalisationComponent } from './pages/signalisation/signalisation.component';
+import { SignalisationPollutionComponent } from './components/signalisation-pollution/signalisation-pollution.component';
+import { SignalisationEtoilesComponent } from './components/signalisation-etoiles/signalisation-etoiles.component';
+import { SignalisationRapportComponent } from './components/signalisation-rapport/signalisation-rapport.component';
 import { SlidebarComponent } from './components/slidebar/slidebar.component';
 
 
@@ -35,7 +39,11 @@ import { SlidebarComponent } from './components/slidebar/slidebar.component';
     StatsComponent,
     HistoricComponent,
     MapComponent,
-    SlidebarComponent
+    SignalisationComponent,
+    SignalisationPollutionComponent,
+    SignalisationEtoilesComponent,
+    SignalisationRapportComponent,
+    SlidebarComponent,
   ],
   imports: [
     BrowserModule,
