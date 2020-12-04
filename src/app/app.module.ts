@@ -17,6 +17,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HistoricComponent } from './pages/historic/historic.component';
 import { MapComponent } from './components/map/map.component';
+import { SessionLaunchComponent } from './pages/session-launch/session-launch.component';
+import { SessionLaunchedComponent } from './pages/session-launch/session-launched/session-launched.component';
+import { SessionStopComponent } from './pages/session-launch/session-stop/session-stop.component';
 import { SlidebarComponent } from './components/slidebar/slidebar.component';
 
 
@@ -35,6 +38,9 @@ import { SlidebarComponent } from './components/slidebar/slidebar.component';
     StatsComponent,
     HistoricComponent,
     MapComponent,
+    SessionLaunchComponent,
+    SessionLaunchedComponent,
+    SessionStopComponent,
     SlidebarComponent
   ],
   imports: [
