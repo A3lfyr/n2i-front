@@ -21,6 +21,9 @@ import { SignalisationComponent } from './pages/signalisation/signalisation.comp
 import { SignalisationPollutionComponent } from './components/signalisation-pollution/signalisation-pollution.component';
 import { SignalisationEtoilesComponent } from './components/signalisation-etoiles/signalisation-etoiles.component';
 import { SignalisationRapportComponent } from './components/signalisation-rapport/signalisation-rapport.component';
+import { SessionLaunchComponent } from './pages/session-launch/session-launch.component';
+import { SessionLaunchedComponent } from './pages/session-launch/session-launched/session-launched.component';
+import { SessionStopComponent } from './pages/session-launch/session-stop/session-stop.component';
 import { SlidebarComponent } from './components/slidebar/slidebar.component';
 
 
@@ -44,6 +47,10 @@ import { SlidebarComponent } from './components/slidebar/slidebar.component';
     SignalisationEtoilesComponent,
     SignalisationRapportComponent,
     SlidebarComponent,
+    SessionLaunchComponent,
+    SessionLaunchedComponent,
+    SessionStopComponent,
+    SlidebarComponent
   ],
   imports: [
     BrowserModule,
