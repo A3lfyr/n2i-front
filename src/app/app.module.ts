@@ -12,6 +12,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { PasswordRecoveryComponent } from './pages/password-recovery/password-recovery.component';
 import { HistoricItemComponent } from './components/historic-item/historic-item.component';
 import { HistoricComponent } from './pages/historic/historic.component';
+import { MapComponent } from './components/map/map.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HistoricComponent } from './pages/historic/historic.component';
     PasswordRecoveryComponent,
     HistoricItemComponent,
     HistoricComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
