@@ -7,6 +7,8 @@ import { ProfilComponent } from './pages/profil/profil.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { StatsComponent } from './pages/stats/stats.component';
 import { HistoricComponent } from './pages/historic/historic.component';
+import { SessionLaunchComponent } from './pages/session-launch/session-launch.component';
+import { SessionLaunchedComponent } from './pages/session-launch/session-launched/session-launched.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfilComponent },
   { path: 'stats', component: StatsComponent },
   { path: 'historic', component : HistoricComponent},
+  { path: 'session', component : SessionLaunchComponent},
+  { path: 'session/on', component : SessionLaunchedComponent},
 ];
 
 @NgModule({

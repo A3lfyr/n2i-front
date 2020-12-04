@@ -1,0 +1,6 @@
+<h2>Session en cours</h2>
+
+<p>{{(now.getTime() - start.getTime()) | date:'mm:ss'}}</p>
+<div class="col-12">
+    <a type="button" class="btn btn-primary btn-block" [routerLink]="['/signalisation-rapport']">Fin de session</a>
+</div>
